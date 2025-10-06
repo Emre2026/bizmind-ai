@@ -1,3 +1,11 @@
+// package.json'a bu scriptleri ekleyin:
+{
+  "scripts": {
+    "build": "CI=false npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
 {
   "name": "bizmind-ai",
   "version": "1.0.0",
